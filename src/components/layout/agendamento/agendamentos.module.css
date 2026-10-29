@@ -40,6 +40,31 @@
   font-weight: 600;
 }
 
+.cardToggle {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+
+.cardToggle:focus-visible {
+  outline: 2px solid #0f766e;
+  outline-offset: 3px;
+}
+
+.toggleIcon {
+  color: #0f766e;
+  font-size: 1.15rem;
+}
+
 .address {
   display: flex;
   flex: 1;
@@ -49,6 +74,11 @@
   font-size: 0.75rem;
   line-height: 1.4;
   font-style: normal;
+}
+
+.address[hidden],
+.scheduleDetails[hidden] {
+  display: none;
 }
 
 .schedule {
@@ -82,10 +112,14 @@
   border-bottom: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   .cards {
     grid-template-columns: 1fr;
     gap: 0.75rem;
+  }
+
+  .card {
+    height: auto;
   }
 
   .card:first-child {
@@ -94,5 +128,37 @@
 
   .section {
     padding: 0 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .cards {
+    gap: 0.5rem;
+  }
+
+  .card {
+    height: auto;
+    padding: 0.65rem 0.85rem;
+  }
+
+  .title {
+    margin-bottom: 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .address {
+    gap: 0.2rem;
+    justify-content: flex-start;
+    font-size: 0.7rem;
+  }
+
+  .schedule {
+    font-size: 0.7rem;
+  }
+
+  .day,
+  .scheduleRow th,
+  .scheduleRow td {
+    padding: 0.15rem;
   }
 }

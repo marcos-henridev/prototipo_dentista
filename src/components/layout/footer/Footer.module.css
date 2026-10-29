@@ -1,0 +1,68 @@
+.footer {
+  padding: 2rem clamp(1.5rem, 8vw, 8rem) 1.25rem;
+  background: #173b3a;
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  max-width: 1440px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.clinic {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.name {
+  font-family: var(--font-montserrat), sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.address {
+  color: #d7e5e1;
+  font-size: 0.875rem;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.registration {
+  color: #d7e5e1;
+  font-size: 0.8rem;
+}
+
+.instagram {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.copyright {
+  max-width: 1440px;
+  margin: 1.5rem auto 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgb(255 255 255 / 20%);
+  color: #d7e5e1;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .content {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}

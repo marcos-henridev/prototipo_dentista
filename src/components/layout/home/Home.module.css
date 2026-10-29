@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  min-height: calc(80vh + 2.5rem);
+  min-height: calc(80vh + 7rem);
 }
 
 .home {
@@ -71,7 +71,6 @@
   margin-top: 1.75rem;
   padding: 0.75rem 1.5rem;
   border: 0;
-  border-radius: 0.375rem;
   background-color: #0f766e;
   color: #fff;
   font: inherit;
